@@ -34,7 +34,7 @@
 
 .n-list>ul>li:hover{
     cursor:pointer;
-    color:var(--blue)
+    color:var(--gray)
 }
 
 .n-button{

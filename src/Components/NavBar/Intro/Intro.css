@@ -40,7 +40,6 @@ font-size: 3rem;
 .i-icons{
     margin-top: 4rem;
     display: flex;
-    justify-content: center;
 }
 .i-icons>a{
     display:inline;
@@ -77,14 +76,34 @@ font-size: 3rem;
 
 .i-right>:nth-child(2){
     
-    top: -4.6rem;
+    top: -19%;
     transform: scale(0.67);
-    left: -3rem;
+    left: -7%;
 }
 
 .i-right>:nth-child(3){
     
-    top: 2rem;
+    top: 3%;
     transform: scale(0.8);
-    left: 6rem;
+    left: 20%;
+}
+
+.i-right>:nth-child(4){
+    transform: scale(0.6);
+    top: -19%;
+    left: -24%;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.blur{
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius:50%;
+    background: #edd0ff;
+    z-index: -9;
+    top: -18%;
+    left: 56%;
+    filter: blur(40px);
 }

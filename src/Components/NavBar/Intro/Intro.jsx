@@ -8,6 +8,7 @@ import thumbup from '../../../img/thumbup.png';
 import Crown from '../../../img/crown.png';
 import glassesimoji from '../../../img/glassesimoji.png';
 import fotoCV from '../../../img/fotoCV.jpeg';
+import FloatingDiv from '../FloatingDiv/FloatingDiv';
 
 function Intro() {
   return (
@@ -32,11 +33,16 @@ function Intro() {
             <img src={Vector1} alt="vector1" />
             <img src={Vector2} alt="vector2" />
             <img src={fotoCV} className="fotoCV" alt="fotoCV" />
-            <div>
-              <FloatingDiv/>
+            <img src={glassesimoji} alt="emoji" />
+            <div style={{top:'-4%', left:'68%'}}>
+              <FloatingDiv image={Crown} text1="Web" text2="Developer"/>
             </div>
+            <div style={{top:'18rem', left:'0rem'}}>
+              <FloatingDiv image={thumbup} text1="Front-end" text2="Preference"/>
+            </div>
+            <div className="blur" style={{ background: 'rgb(238,210,255)'}}></div>
+            <div className="blur" style={{ background: '#C1F5FF', top:"16rem", width:"21rem", height:'11rem', left:"-7rem"}}></div>
           </div>
-
       </div>
   )
 }
