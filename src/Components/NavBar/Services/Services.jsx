@@ -18,6 +18,7 @@ function Services() {
         </div>
         {/* right side */}
         <div className="cards">
+          {/* first card */}
             <div style={{left:'20rem'}}>
                 <Card
                 emoji={HeartEmoji}
@@ -25,6 +26,14 @@ function Services() {
                 detail={'MongoDB , Sequelize , PostgreSQL , TypeScript'}
                 />
             </div>
+            {/* second card */}
+          <div style={{top:"12rem", left: "-4rem"}}>
+          <Card
+                emoji={Glasses}
+                heading={'Front-end'}
+                detail={'React, JS , TS , Redux Toolkit, MaterialUI...'}
+                />
+          </div>
         </div>
     </div>
   )
