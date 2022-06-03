@@ -2,7 +2,7 @@
     padding: 0 3rem 0 3rem;
     display: flex;
     height: 80vh;
-    margin-top: 4rem;
+    margin-top: 10rem;
 }
 .c-right{
     display: flex;
@@ -18,7 +18,7 @@
     align-items: center;
 }
 
-.c-rigth .user{
+.c-right .user{
     width: 20rem;
     height: 2rem;
     padding: 0.3em;
@@ -26,4 +26,12 @@
     border:2px solid var(--blue);
     border-radius: 8px;
     font-size: 17px;
+}
+
+textarea{
+    height: 4rem !important;
+}
+.c-blurl{
+    top: 1rem;
+    left: 8rem;
 }
