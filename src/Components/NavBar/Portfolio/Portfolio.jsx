@@ -6,13 +6,17 @@ import ClimaApp from '../../../img/Appclima.png';
 import PokeApp from '../../../img/pokeApp.png';
 import HenryASK from '../../../img/henryASK.png';
 import PortfolioP from '../../../img/portfolioimg.png';
+import { themeContext } from '../../../Context';
+import { useContext } from "react";
 
 
 function Portfolio() {
+    const theme=useContext(themeContext);
+    const darkMode=theme.state.darkMode;
   return (
     <div className="portfolio">
         {/* heading */}
-        <span className='portfolio1'>Ultimos proyectos</span>
+        <span className='portfolio1' style={{color:darkMode?'white': ''}}>Ultimos proyectos</span>
         <span className='portfolio2'>Portfolio</span>
 
         {/* slider */}

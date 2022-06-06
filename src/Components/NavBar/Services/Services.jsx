@@ -4,14 +4,18 @@ import HeartEmoji from '../../../img/heartemoji.png';
 import Glasses from '../../../img/glasses.png';
 import Humble from '../../../img/humble.png';
 import Card from '../Card/Card';
-import CV from '../../../img/MARKOAYALA-CV-FULLSTACK.pdf'
+import CV from '../../../img/MARKOAYALA-CV-FULLSTACK.pdf';
+import { themeContext } from '../../../Context';
+import { useContext } from "react";
 
 function Services() {
+  const theme=useContext(themeContext);
+  const darkMode=theme.state.darkMode;
   return (
     <div className="services">
         {/* left side */}
         <div className="awesome">
-            <span>Ofrezco los</span>
+            <span style={{color:darkMode?'white':''}}>Ofrezco los</span>
             <span>siguientes servicios:</span>
             <span>lorem ipmsum dor loriam no se que escribir en esta <br /> parte del cv ahre loco lorem impsu dor</span>
             <a href={CV} download>
