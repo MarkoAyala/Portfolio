@@ -11,8 +11,10 @@ import fotoCV from '../../../img/fotoCV.jpeg';
 import FloatingDiv from '../FloatingDiv/FloatingDiv';
 import { themeContext } from '../../../Context';
 import { useContext } from "react";
+import {motion} from 'framer-motion';
 
 function Intro() {
+  const transition ={dration:2,type:'spring'}
   const theme=useContext(themeContext);
   const darkMode=theme.state.darkMode;
   return (
@@ -37,13 +39,25 @@ function Intro() {
             <img src={Vector1} alt="vector1" />
             <img src={Vector2} alt="vector2" />
             <img src={fotoCV} className="fotoCV" alt="fotoCV" />
-            <img src={glassesimoji} alt="emoji" />
-            <div style={{top:'-4%', left:'68%'}}>
+            <motion.img
+            initial={{left:'-35%'}}
+            whileInView={{left:'-24%'}}
+            transition={transition}
+            src={glassesimoji} alt="emoji" />
+            <motion.div style={{top:'-4%', left:'68%'}}
+            initial={{top:'-4%',left:'74%'}}
+            whileInView={{left:'68%'}}
+            transition={transition}
+            >
               <FloatingDiv image={Crown} text1="Web" text2="Developer"/>
-            </div>
-            <div style={{top:'18rem', left:'0rem'}}>
+            </motion.div>
+            <motion.div style={{top:'18rem', left:'0rem'}}
+            initial={{left:'9rem', top:'18rem'}}
+            whileInView={{left:'0rem'}}
+            transition={transition}
+            >
               <FloatingDiv image={thumbup} text1="Front-end" text2="Preference"/>
-            </div>
+            </motion.div>
             <div className="blur" style={{ background: 'rgb(238,210,255)'}}></div>
             <div className="blur" style={{ background: '#C1F5FF', top:"16rem", width:"21rem", height:'11rem', left:"-7rem"}}></div>
           </div>
