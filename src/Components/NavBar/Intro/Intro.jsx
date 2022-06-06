@@ -9,13 +9,17 @@ import Crown from '../../../img/crown.png';
 import glassesimoji from '../../../img/glassesimoji.png';
 import fotoCV from '../../../img/fotoCV.jpeg';
 import FloatingDiv from '../FloatingDiv/FloatingDiv';
+import { themeContext } from '../../../Context';
+import { useContext } from "react";
 
 function Intro() {
+  const theme=useContext(themeContext);
+  const darkMode=theme.state.darkMode;
   return (
       <div className="intro">
           <div className="i-left">
               <div className="i-name">
-                  <span>Hola! Soy</span>
+                  <span style={{color:darkMode?'white': ''}}>Hola! Soy</span>
                   <span>Marko Ayala</span>
                   <span>Soy Desarrollador Full-Stack con conocimientos solidos en React , Typescript y Redux.</span>
               </div>
