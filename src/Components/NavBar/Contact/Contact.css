@@ -48,3 +48,17 @@ textarea{
     }
 
 }   
+
+@media screen and (max-width:899px) and (min-width:481px){
+    .contact-form{
+        padding: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 40rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    .c-right .user{
+        width: 16rem;
+    }
+}
