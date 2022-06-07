@@ -38,7 +38,7 @@ function Contact() {
         setForm(formState={...formState, [e.target.name]:e.target.value })
     }
   return (
-    <div className="contact-form">
+    <div className="contact-form" id='Contact'>
         <div className="w-left">
             <div className="awesome">
                 <span style={{color:darkMode?'white': ''}}>Ponte en contacto,</span>

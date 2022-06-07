@@ -31,14 +31,18 @@ function Portfolio() {
         className='portfolio-slider'
         >
             <SwiperSlide>
+                <a href="https://henryask.vercel.app/" target='_blank'>
                 <img src={HenryASK} alt="" />
+                </a>
            {/*      <div className="description">
                 <span>HenryASK...</span>
                 <span>Ver más</span>
                 </div> */}
             </SwiperSlide>
             <SwiperSlide>
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:6920055989194903552/" target='_blank'>
                 <img src={PokeApp} alt="" />
+                </a>
                {/*  <div className="description">
                 <span>PokeApp...</span>
                 <span>Ver más</span>
@@ -53,7 +57,9 @@ function Portfolio() {
                 
             </SwiperSlide>
             <SwiperSlide>
-                <img src={PortfolioP} alt="" />
+                <a href="https://github.com/MarkoAyala/Portfolio" target='_blank'>
+                    <img src={PortfolioP} alt="" />
+                </a>
               {/*   <div className="description">
                 <span>Portfolio...</span>
                 <span>Ver más</span>

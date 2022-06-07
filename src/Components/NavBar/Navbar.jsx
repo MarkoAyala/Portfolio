@@ -27,9 +27,11 @@ const Navbar = () => {
                       </Link>
                   </ul>
               </div>
+              <Link spy={true} to='Contact' smooth={true}>
               <button className='button n-button'>
                 Contactame
               </button>
+              </Link>
           </div>
       </div>
   )

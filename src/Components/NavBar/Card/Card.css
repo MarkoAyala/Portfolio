@@ -28,6 +28,8 @@
     border: none;
     font-size: 17px;
     color:#0761fc;
+    z-index: 200;
+    cursor: pointer;
 }
 
 @media screen and (max-width:480px){

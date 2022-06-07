@@ -12,6 +12,7 @@ import FloatingDiv from '../FloatingDiv/FloatingDiv';
 import { themeContext } from '../../../Context';
 import { useContext } from "react";
 import {motion} from 'framer-motion';
+import {Link} from 'react-scroll';
 
 function Intro() {
   const transition ={dration:2,type:'spring'}
@@ -25,7 +26,9 @@ function Intro() {
                   <span>Marko Ayala</span>
                   <span>Soy Desarrollador Full-Stack con conocimientos solidos en React , Typescript y Redux.</span>
               </div>
-              <button className='button i-button'>Hire me</button>
+              <Link spy={true} to='Contact' smooth={true}>
+              <button className='button i-button'>Contratame!</button>
+              </Link>
               <div className="i-icons">
                 <a href="https://github.com/MarkoAyala" target='_blank'>
                 <img className='i-icons-image' src={GitHub} alt="icon failed" />
