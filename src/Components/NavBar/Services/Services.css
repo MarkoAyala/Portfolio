@@ -66,8 +66,6 @@
     }
     .cards>*{
         position: static;
-      /*   display: flex;
-        justify-content: center; */
     }
 }
 @media screen and (max-width:1250px) and (min-width:900px){
