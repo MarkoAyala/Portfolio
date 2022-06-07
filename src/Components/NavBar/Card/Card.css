@@ -29,3 +29,10 @@
     font-size: 17px;
     color:#0761fc;
 }
+
+@media screen and (max-width:480px){
+    .card{
+        width: auto;
+        
+    }
+}

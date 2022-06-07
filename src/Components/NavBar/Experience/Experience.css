@@ -68,3 +68,14 @@
     left: 10%;
     filter: blur(40px);
 }
+@media screen and (max-width: 480px) {
+    .experience{
+        transform: scale(0.7);
+    }
+    .blura{
+        display: none;
+    }
+    .bluras{
+        display: none;
+    }
+}

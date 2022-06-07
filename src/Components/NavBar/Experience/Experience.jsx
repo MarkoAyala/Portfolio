@@ -7,7 +7,7 @@ function Experience() {
   const theme=useContext(themeContext);
   const darkMode=theme.state.darkMode;
   return (
-    <div className="experience">
+    <div className="experience" id='Experience'>
         <div className="blura" style={{ background: 'rgb(238,210,255)'}}></div>
         <div className="bluras" style={{ background: '#C1F5FF', top:"8rem", width:"21rem", height:'11rem', left:"50rem"}}></div>
         <div className="achievement">

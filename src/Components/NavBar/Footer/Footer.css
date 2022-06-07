@@ -16,3 +16,10 @@
     gap: 2rem;
     color:black;
 }
+@media screen and (max-width: 480px){
+    .f-content{
+      transform: scale(.8);
+      margin-top: 4rem;
+      gap: 1rem;
+    }
+  }

@@ -14,10 +14,13 @@ function Portfolio() {
     const theme=useContext(themeContext);
     const darkMode=theme.state.darkMode;
   return (
-    <div className="portfolio">
+    <div className="portfolio" id='Portfolio'>
         {/* heading */}
-        <span className='portfolio1' style={{color:darkMode?'white': ''}}>Ultimos proyectos</span>
-        <span className='portfolio2'>Portfolio</span>
+        <div className="center" style={{display:'flex' , flexDirection:'column'}}>
+
+        <span style={{color:darkMode?'white': ''}}>Ultimos proyectos</span>
+        <span >Portfolio</span>
+        </div>
 
         {/* slider */}
 
@@ -29,32 +32,32 @@ function Portfolio() {
         >
             <SwiperSlide>
                 <img src={HenryASK} alt="" />
-                <div className="description">
+           {/*      <div className="description">
                 <span>HenryASK...</span>
                 <span>Ver más</span>
-                </div>
+                </div> */}
             </SwiperSlide>
             <SwiperSlide>
                 <img src={PokeApp} alt="" />
-                <div className="description">
+               {/*  <div className="description">
                 <span>PokeApp...</span>
                 <span>Ver más</span>
-                </div>
+                </div> */}
             </SwiperSlide>{" "}
             <SwiperSlide>
                 <img src={ClimaApp} alt="" />
-                <div className="description">
+               {/*  <div className="description">
                 <span>ClimaApp...</span>
                 <span>Ver más</span>
-                </div>
+                </div> */}
                 
             </SwiperSlide>
             <SwiperSlide>
                 <img src={PortfolioP} alt="" />
-                <div className="description">
+              {/*   <div className="description">
                 <span>Portfolio...</span>
                 <span>Ver más</span>
-                </div>
+                </div> */}
             </SwiperSlide>
         </Swiper>
 

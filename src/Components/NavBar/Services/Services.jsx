@@ -7,14 +7,15 @@ import Card from '../Card/Card';
 import CV from '../../../img/MARKOAYALA-CV-FULLSTACK.pdf';
 import { themeContext } from '../../../Context';
 import { useContext } from "react";
-import {motion} from 'framer-motion'
+import {motion} from 'framer-motion';
+import {Link} from 'react-scroll';
 
 function Services() {
   const theme=useContext(themeContext);
   const darkMode=theme.state.darkMode;
   const transition ={duration:1, type:'spring'}
   return (
-    <div className="services">
+    <div className="services" id='Services'>
         {/* left side */}
         <div className="awesome">
             <span style={{color:darkMode?'white':''}}>Ofrezco los</span>

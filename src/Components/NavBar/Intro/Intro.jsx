@@ -36,8 +36,8 @@ function Intro() {
               </div>
           </div>
           <div className="i-right">
-            <img src={Vector1} alt="vector1" />
-            <img src={Vector2} alt="vector2" />
+            <img src={Vector1} className='vector1' alt="vector1" />
+            <img src={Vector2} className='vector2' alt="vector2" />
             <img src={fotoCV} className="fotoCV" alt="fotoCV" />
             <motion.img
             initial={{left:'-35%'}}
@@ -48,6 +48,7 @@ function Intro() {
             initial={{top:'-4%',left:'74%'}}
             whileInView={{left:'68%'}}
             transition={transition}
+            className='floating-div'
             >
               <FloatingDiv image={Crown} text1="Web" text2="Developer"/>
             </motion.div>
@@ -55,11 +56,14 @@ function Intro() {
             initial={{left:'9rem', top:'18rem'}}
             whileInView={{left:'0rem'}}
             transition={transition}
+            className='floating-div'
             >
               <FloatingDiv image={thumbup} text1="Front-end" text2="Preference"/>
             </motion.div>
-            <div className="blur" style={{ background: 'rgb(238,210,255)'}}></div>
-            <div className="blur" style={{ background: '#C1F5FF', top:"16rem", width:"21rem", height:'11rem', left:"-7rem"}}></div>
+            {
+              !darkMode?(<><div className="blur" style={{ background: 'rgb(238,210,255)'}}></div><div className="blur" style={{ background: '#C1F5FF', top:"16rem", width:"21rem", height:'11rem', left:"-7rem"}}></div></>):null
+            }
+           
           </div>
       </div>
   )

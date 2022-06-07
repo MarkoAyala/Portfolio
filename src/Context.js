@@ -1,7 +1,7 @@
 import { createContext, useReducer } from "react";
 
 export const themeContext = createContext();
-const InitialState = {darkMode:true};
+const InitialState = {darkMode:false};
 const themeReducer = (state,action) => {
     switch(action.type){
         case'toggle':
