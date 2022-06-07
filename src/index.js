@@ -1,11 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Route , Routes } from 'react-router-dom';
+import { BrowserRouter as Router } from "react-router-dom";
+
 import App from './App';
 import {ThemeProvider} from './Context.js';
 
 ReactDOM.render(
-  <ThemeProvider>
-    <App />
+      <ThemeProvider>
+        <Router>
+          <Routes>
+            <Route path='/' element={<App/>}/>
+          </Routes>
+        </Router>
   </ThemeProvider>,
   document.getElementById('root')
 );
