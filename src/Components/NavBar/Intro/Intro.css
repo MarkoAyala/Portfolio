@@ -132,6 +132,11 @@ font-size: 3rem;
         width: 350px;
         margin-left: 4rem !important;
     }
+    .i-icons-image{
+        width: 180%;
+        box-sizing: border-box;
+        height: auto;
+    }
 
 }
 
@@ -188,5 +193,10 @@ font-size: 3rem;
         position: absolute !important;
         top: 5% !important;
         left: 0% !important;
+    }
+    .i-icons-image{
+        width: 110%;
+        box-sizing: border-box;
+        height: auto;
     }
 }

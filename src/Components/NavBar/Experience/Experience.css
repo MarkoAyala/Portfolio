@@ -70,12 +70,28 @@
 }
 @media screen and (max-width: 480px) {
     .experience{
-        transform: scale(0.7);
+        transform: scale(0.8);
+        gap: 2rem;
+        height: 26rem;
     }
+    .achievement{
+        margin-top: 10rem;
+    }
+   
     .blura{
         display: none;
     }
     .bluras{
         display: none;
+    }
+}
+@media screen and (max-width:899px) and (min-width:481px){
+    .experience{
+        transform: scale(0.9);
+        gap: 2rem;
+        height: 8rem;
+    }
+    .achievement{
+        margin-top: 5rem;
     }
 }

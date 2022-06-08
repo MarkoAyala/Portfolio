@@ -47,12 +47,12 @@ function Portfolio() {
           </a>
         </SwiperSlide>{" "}
         <SwiperSlide>
-          <img src={ClimaApp} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
           <a href="https://github.com/MarkoAyala/Portfolio" target="_blank">
             <img src={PortfolioP} alt="" />
           </a>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={ClimaApp} alt="" />
         </SwiperSlide>
       </Swiper>
     </div>
