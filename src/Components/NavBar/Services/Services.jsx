@@ -20,9 +20,9 @@ function Services() {
   const [open, setOpen] = React.useState(false);
   let [status, setStatus] = React.useState('');
 
-  let front = 'React, Javascript , Typescript , Redux , Redux toolkit , MaterialUI , Bootstrap , CSS3 , HTML5'
-  let back = 'ExpressJS, MongoDB , Sequelize , PostgreSQL'
-  let soft = 'Procesos agiles como SCRUM , gestion de proyectos con Trello/Slack, trabajo en equipo, aprendizaje constante e independiente, Creativo'
+  let front = 'React, Javascript, Typescript, Redux, Redux toolkit, MaterialUI, Bootstrap, CSS3, HTML5'
+  let back = 'ExpressJS, MongoDB, Sequelize, PostgreSQL'
+  let soft = 'Procesos ágiles como SCRUM, gestión de proyectos con Trello/Slack, trabajo en equipo, aprendizaje constante e independiente, creativo'
   const handleClickOpen = (string) => {
     setOpen(true);
     setStatus(string)
@@ -38,7 +38,7 @@ function Services() {
         <div className="awesome">
             <span style={{color:darkMode?'white':''}}>Ofrezco los</span>
             <span>siguientes servicios:</span>
-            <span> Busco poder seguir desarrollandome <br /> en una empresa y al maximo todas mis habilidades !</span>
+            <span> Busco poder seguir desarrollándome <br /> en una empresa y al máximo todas mis habilidades !</span>
             <a href={CV} download>
             <button className='button s-button'>Descargar CV</button>
             </a>
@@ -84,7 +84,7 @@ function Services() {
           <Card
                 emoji={Humble}
                 heading={'Soft skils'}
-                detail={'Trabajo en equipo, Aprendizaje constate e indepediente, Creativo'}
+                detail={'Trabajo en equipo, Aprendizaje constante e independiente, Creativo'}
                 handleClickOpen={handleClickOpen}
                 status='softskills'
                 />

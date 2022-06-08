@@ -25,7 +25,7 @@ function Experience() {
         <div className="achievement">
             <div className="circle"  style={{backgroundImage:darkMode?'linear-gradient(to bottom, #ff0000 0%, #2500ff 100%)'
 : ''}}>20+</div>
-            <span>Tecnologias</span>
+            <span>Tecnologías</span>
             <span>Dominadas</span>
         </div>
     </div>

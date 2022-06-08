@@ -6,6 +6,7 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import Slide from '@mui/material/Slide';
+import './Dialog.css';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -15,7 +16,7 @@ export default function Dialoge({open , handleClose, soft}) {
  
 
   return (
-    <div >
+    <div className='dialog'>
       <Dialog
         open={open}
         TransitionComponent={Transition}
@@ -23,6 +24,7 @@ export default function Dialoge({open , handleClose, soft}) {
         onClose={handleClose}
         aria-describedby="alert-dialog-slide-description"
         style={{padding:'4rem'}}
+        className='dialog'
       >
         <DialogTitle>{"IT SKILLS!"}</DialogTitle>
         <DialogContent style={{padding:' 1rem 2rem 1rem 2rem'}}>

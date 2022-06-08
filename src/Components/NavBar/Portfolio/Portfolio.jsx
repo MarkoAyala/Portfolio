@@ -20,7 +20,7 @@ function Portfolio() {
         style={{ display: "flex", flexDirection: "column" }}
       >
         <span style={{ color: darkMode ? "white" : "" }}>
-          Ultimos proyectos
+          Últimos proyectos
         </span>
         <span>Portfolio</span>
       </div>
