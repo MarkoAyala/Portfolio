@@ -8,12 +8,15 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import HomeIcon from '@mui/icons-material/Home';
 import {Link} from 'react-scroll';
-
+import WorkIcon from '@mui/icons-material/Work';
+import BeenhereIcon from '@mui/icons-material/Beenhere';
+import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
+import ContactMailIcon from '@mui/icons-material/ContactMail';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export default function TemporaryDrawer() {
   const [state, setState] = React.useState({
@@ -33,7 +36,9 @@ export default function TemporaryDrawer() {
 
   const list = (anchor) => (
     <Box
-      sx={{ width:250 }}
+      sx={{ width:250 , height:'100vh', justifyContent:'space-between'}}
+      display='flex'
+      flexDirection='column'
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
@@ -54,7 +59,7 @@ export default function TemporaryDrawer() {
           <ListItem key={'Servicios'} disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                <HomeIcon/>
+                <WorkIcon/>
               </ListItemIcon>
               <Link onClick={toggleDrawer(anchor, false)} spy={true} to='Services' smooth={true} >
               <ListItemText primary={'Servicios'} />
@@ -65,7 +70,7 @@ export default function TemporaryDrawer() {
           <ListItem key={'Experiencia'} disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                <HomeIcon/>
+                <WorkspacePremiumIcon/>
               </ListItemIcon>
               <Link onClick={toggleDrawer(anchor, false)} spy={true} to='Experience' smooth={true} >
               <ListItemText primary={'Experiencia'} />
@@ -75,7 +80,7 @@ export default function TemporaryDrawer() {
           <ListItem key={'Portfolio'} disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                <HomeIcon/>
+                <BeenhereIcon/>
               </ListItemIcon>
               <Link onClick={toggleDrawer(anchor, false)} spy={true} to='Portfolio' smooth={true} >
               <ListItemText primary={'Portfolio'} />
@@ -86,7 +91,7 @@ export default function TemporaryDrawer() {
           <ListItem key={'Contact'} disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                <HomeIcon/>
+                <ContactMailIcon/>
               </ListItemIcon>
               <Link onClick={toggleDrawer(anchor, false)} spy={true} to='Contact' smooth={true} >
               <ListItemText primary={'Contactame'} />
@@ -94,25 +99,25 @@ export default function TemporaryDrawer() {
             </ListItemButton>
           </ListItem>
       </List>
-      <List>
+      <List sx={{margin:'0 0 2rem 0'}}>
       <ListItem key={'Linkedin'} disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                <HomeIcon/>
+                <LinkedInIcon/>
               </ListItemIcon>
-              <Link onClick={toggleDrawer(anchor, false)} spy={true} to='Contact' smooth={true} >
+              <a href='https://www.linkedin.com/in/markoayaladev/' target='_blank' style={{textDecoration:'none' ,color:'rgb(0,0,0)'}}>
               <ListItemText primary={'Mi Linkedin'} />
-              </Link>
+              </a>
             </ListItemButton>
           </ListItem>
           <ListItem key={'github'} disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                <HomeIcon/>
+                <GitHubIcon/>
               </ListItemIcon>
-              <Link onClick={toggleDrawer(anchor, false)} spy={true} to='Contact' smooth={true} >
+              <a href='https://github.com/MarkoAyala' target='_blank' style={{textDecoration:'none' ,color:'rgb(0,0,0)'}}>
               <ListItemText primary={'Mi GitHub'} />
-              </Link>
+              </a>
             </ListItemButton>
           </ListItem>
       </List>
@@ -123,7 +128,7 @@ export default function TemporaryDrawer() {
     <div>
       {
         <React.Fragment key={'left'}>
-          <Button sx={{display:{sm:'flex',md:'none', lg:'none'},}} onClick={toggleDrawer('left', true)}><MenuIcon/></Button>
+          <Button sx={{display:{sm:'flex',md:'flex', lg:'none'},}} onClick={toggleDrawer('left', true)}><MenuIcon/></Button>
           <Drawer
             anchor={'left'}
             open={state['left']}

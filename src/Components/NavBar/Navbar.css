@@ -51,9 +51,12 @@
     }
 }
 
-@media screen and (max-width:899px){
+@media screen and (max-width:1077px){
     .n-right{
         display: none;
         visibility: hidden;
+    }
+    .n-button{
+        display: none;
     }
 }
