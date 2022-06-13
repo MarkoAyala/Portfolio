@@ -9,7 +9,6 @@ import { themeContext } from '../../../Context';
 import { useContext } from "react";
 import {motion} from 'framer-motion';
 import Dialoge from '../Dialog/Dialog';
-import {Link} from 'react-scroll';
 
 
 function Services() {
