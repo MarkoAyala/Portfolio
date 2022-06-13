@@ -8,6 +8,7 @@ import HenryASK from "../../../img/henryASK.png";
 import PortfolioP from "../../../img/portfolioimg.png";
 import { themeContext } from "../../../Context";
 import { useContext } from "react";
+import Almirante from '../../../img/almiranteB.png';
 
 function Portfolio() {
   const theme = useContext(themeContext);
@@ -50,6 +51,9 @@ function Portfolio() {
           <a href="https://github.com/MarkoAyala/Portfolio" target="_blank">
             <img src={PortfolioP} alt="" />
           </a>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Almirante} alt="" />
         </SwiperSlide>
         <SwiperSlide>
           <img src={ClimaApp} alt="" />

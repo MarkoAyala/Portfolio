@@ -94,4 +94,10 @@
     .achievement{
         margin-top: 5rem;
     }
+    .blura{
+        display: none;
+    }
+    .bluras{
+        display: none;
+    }
 }
