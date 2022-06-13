@@ -1,12 +1,15 @@
-import React from 'react'
-import './Navbar.css'
-import Toggle from './Toggle/Toggle'
+import React from 'react';
+import './Navbar.css';
+import Toggle from './Toggle/Toggle';
 import {Link} from 'react-scroll';
+import Drawer from './Drawer.jsx';
 
 const Navbar = () => {
+
   return (
       <div className="n-wrapper">
           <div className="n-left">
+              <Drawer/>
               <div className="n-name">Marko</div>
               <Toggle/>
           </div>

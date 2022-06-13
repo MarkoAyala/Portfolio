@@ -50,3 +50,10 @@
         display: none;
     }
 }
+
+@media screen and (max-width:899px){
+    .n-right{
+        display: none;
+        visibility: hidden;
+    }
+}
