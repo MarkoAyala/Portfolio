@@ -33,9 +33,8 @@
     cursor: pointer;
 }
 
-.n-list>ul>li:hover{
-    cursor:pointer;
-    color:var(--gray)
+.hovver:hover{
+    color:var(--orange);
 }
 
 .n-button{

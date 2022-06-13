@@ -16,16 +16,16 @@ const Navbar = () => {
           <div className="n-right">
               <div className="n-list">
                   <ul style={{listStyleType: 'none'}}>
-                      <Link spy={true} to='Navbar' smooth={true} >
+                      <Link className='hovver' spy={true} to='Navbar' smooth={true} >
                       <li>Inicio</li>
                       </Link>
-                      <Link spy={true} to='Services' smooth={true}>
+                      <Link className='hovver' spy={true} to='Services' smooth={true}>
                       <li>Servicios</li>
                       </Link>
-                      <Link spy={true} to='Experience' smooth={true}>
+                      <Link className='hovver' spy={true} to='Experience' smooth={true}>
                       <li>Experiencia</li>
                       </Link>
-                      <Link spy={true} to='Portfolio' smooth={true}>
+                      <Link className='hovver' spy={true} to='Portfolio' smooth={true}>
                       <li>Portfolio</li>
                       </Link>
                   </ul>

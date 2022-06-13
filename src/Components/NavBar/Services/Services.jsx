@@ -38,7 +38,7 @@ function Services() {
         <div className="awesome">
             <span style={{color:darkMode?'white':''}}>Ofrezco los</span>
             <span>siguientes servicios:</span>
-            <span> Busco poder seguir desarrollándome <br /> en una empresa y al máximo todas mis habilidades !</span>
+            <span> Busco poder seguir desarrollándome <br /> en una empresa y mejorar al máximo todas mis habilidades !</span>
             <a href={CV} download>
             <button className='button s-button'>Descargar CV</button>
             </a>
