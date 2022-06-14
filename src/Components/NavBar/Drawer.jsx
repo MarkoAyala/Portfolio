@@ -45,81 +45,81 @@ export default function TemporaryDrawer() {
     >
       <List>
         
+              <Link onClick={toggleDrawer(anchor, false)} spy={true} to='Navbar' smooth={true} >
           <ListItem key={'inicio'} disablePadding>
             <ListItemButton>
               <ListItemIcon>
                 <HomeIcon/>
               </ListItemIcon>
-              <Link onClick={toggleDrawer(anchor, false)} spy={true} to='Navbar' smooth={true} >
               <ListItemText primary={'Inicio'} />
-              </Link>
             </ListItemButton>
           </ListItem>
+              </Link>
 
+              <Link onClick={toggleDrawer(anchor, false)} spy={true} to='Services' smooth={true} >
           <ListItem key={'Servicios'} disablePadding>
             <ListItemButton>
               <ListItemIcon>
                 <WorkIcon/>
               </ListItemIcon>
-              <Link onClick={toggleDrawer(anchor, false)} spy={true} to='Services' smooth={true} >
               <ListItemText primary={'Servicios'} />
-              </Link>
             </ListItemButton>
           </ListItem>
+              </Link>
 
+              <Link onClick={toggleDrawer(anchor, false)} spy={true} to='Experience' smooth={true} >
           <ListItem key={'Experiencia'} disablePadding>
             <ListItemButton>
               <ListItemIcon>
                 <WorkspacePremiumIcon/>
               </ListItemIcon>
-              <Link onClick={toggleDrawer(anchor, false)} spy={true} to='Experience' smooth={true} >
               <ListItemText primary={'Experiencia'} />
-              </Link>
             </ListItemButton>
           </ListItem>
+              </Link>
+              <Link onClick={toggleDrawer(anchor, false)} spy={true} to='Portfolio' smooth={true} >
           <ListItem key={'Portfolio'} disablePadding>
             <ListItemButton>
               <ListItemIcon>
                 <BeenhereIcon/>
               </ListItemIcon>
-              <Link onClick={toggleDrawer(anchor, false)} spy={true} to='Portfolio' smooth={true} >
               <ListItemText primary={'Portfolio'} />
-              </Link>
             </ListItemButton>
           </ListItem>
+              </Link>
           <Divider />
+              <Link onClick={toggleDrawer(anchor, false)} spy={true} to='Contact' smooth={true} >
           <ListItem key={'Contact'} disablePadding>
             <ListItemButton>
               <ListItemIcon>
                 <ContactMailIcon/>
               </ListItemIcon>
-              <Link onClick={toggleDrawer(anchor, false)} spy={true} to='Contact' smooth={true} >
               <ListItemText primary={'Contactame'} />
-              </Link>
             </ListItemButton>
           </ListItem>
+              </Link>
       </List>
       <List sx={{margin:'0 0 2rem 0'}}>
+              <a href='https://www.linkedin.com/in/markoayaladev/' target='_blank' style={{textDecoration:'none' ,color:'rgb(0,0,0)'}}>
       <ListItem key={'Linkedin'} disablePadding>
             <ListItemButton>
               <ListItemIcon>
                 <LinkedInIcon/>
               </ListItemIcon>
-              <a href='https://www.linkedin.com/in/markoayaladev/' target='_blank' style={{textDecoration:'none' ,color:'rgb(0,0,0)'}}>
-              <ListItemText primary={'Mi Linkedin'} />
-              </a>
+              <ListItemText primary={'Linkedin'} />
             </ListItemButton>
           </ListItem>
+              </a>
+              <a href='https://github.com/MarkoAyala' target='_blank' style={{textDecoration:'none' ,color:'rgb(0,0,0)'}}>
           <ListItem key={'github'} disablePadding>
             <ListItemButton>
               <ListItemIcon>
                 <GitHubIcon/>
               </ListItemIcon>
-              <a href='https://github.com/MarkoAyala' target='_blank' style={{textDecoration:'none' ,color:'rgb(0,0,0)'}}>
-              <ListItemText primary={'Mi GitHub'} />
-              </a>
+              <ListItemText primary={'GitHub'} />
             </ListItemButton>
           </ListItem>
+              </a>
       </List>
     </Box>
   );

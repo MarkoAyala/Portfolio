@@ -22,12 +22,12 @@
     margin-bottom: -2rem;
 }
 .c-button{
-    background: rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.1);
     box-shadow: 0px 19px 60px rgba(0,0,0,0.08);
     border-radius: 7px;
     border: none;
     font-size: 17px;
-    color:#0761fc;
+    color:var(--orange);
     z-index: 200;
     cursor: pointer;
     font-weight: bold;

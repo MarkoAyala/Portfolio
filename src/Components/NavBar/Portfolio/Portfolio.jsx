@@ -53,10 +53,10 @@ function Portfolio() {
           </a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Almirante} alt="" />
+          <img src={ClimaApp} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={ClimaApp} alt="" />
+          <img src={Almirante} alt="" />
         </SwiperSlide>
       </Swiper>
     </div>
