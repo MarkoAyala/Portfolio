@@ -6,6 +6,7 @@ import ClimaApp from "../../../img/Appclima.png";
 import PokeApp from "../../../img/pokeApp.png";
 import HenryASK from "../../../img/henryASK.png";
 import PortfolioP from "../../../img/portfolioimg.png";
+import Metamask from '../../../img/metamask.png';
 import { themeContext } from "../../../Context";
 import { useContext } from "react";
 import Almirante from '../../../img/almiranteB.png';
@@ -35,10 +36,21 @@ function Portfolio() {
         className="portfolio-slider"
       >
         <SwiperSlide>
+          <img src={Almirante} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
           <a href="https://henryask.vercel.app/" target="_blank">
             <img src={HenryASK} alt="" />
           </a>
         </SwiperSlide>
+        <SwiperSlide>
+          <a
+            href="https://metamask-markoayala.vercel.app/"
+            target="_blank"
+          >
+            <img src={Metamask} alt="" />
+          </a>
+        </SwiperSlide>{" "}
         <SwiperSlide>
           <a
             href="https://www.linkedin.com/feed/update/urn:li:activity:6920055989194903552/"
@@ -55,9 +67,7 @@ function Portfolio() {
         <SwiperSlide>
           <img src={ClimaApp} alt="" />
         </SwiperSlide>
-        <SwiperSlide>
-          <img src={Almirante} alt="" />
-        </SwiperSlide>
+ 
       </Swiper>
     </div>
   );
